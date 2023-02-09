@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, hình vuông, ...)
+*/
+
+/* Common */
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+li {
+    list-style: none;
+}
+
+
+.logo img {
+    width: 108px;
+    height: 32px;
+}
+
+#header {
+    position: fixed;
+    padding-top: 20px;
+    height: 45px;
+    width: 100%;
+}
+
+#nav {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.nav-child {
+    display: flex;
+}
+
+.nav-child .login {
+    margin-left: 32px;
+}
+
+.language {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 4px;
+    line-height: 24px;
+}
+
+.language i {
+    font-size: 12px;
+    color: #fff;
+}
+
+.language .angle-down {
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+.sign-in {
+    padding: 7px 17px;
+    line-height: 24px;
+    margin-left: 24px;
+    background-color: #e50914;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+}
+
+#content-container {
+    height: 100%;
+    max-width: 100%;
+}
+
+#content-container .content {
+    background-color: #000;
+    border-bottom: 8px solid #ccc;
+}
+
+#content-container .register {
+    height: 704px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 8px solid #ccc;
+}
+
+#content-container .register .header-image {
+    z-index: -1;
+    position: absolute;
+    height: inherit;
+    object-fit: cover;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
