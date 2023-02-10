@@ -2,7 +2,7 @@
 * {
 padding: 0;
 margin: 0;
-box-sizing: border-box;
+box-sizing: content-box;
 }
 
 html {
@@ -98,6 +98,7 @@ li {
     background-color: #e50914;
     border-radius: 3px;
     color: #fff;
+    cursor: pointer;
 }
 
 #body {
@@ -117,7 +118,7 @@ li {
 
 #content-container .register {
     height: 704px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 8px solid #ccc;
 }
 
@@ -127,8 +128,85 @@ li {
     height: inherit;
     object-fit: cover;
     max-width: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
+.register-content {
+    position: relative;
+    left: auto;
+    top: 20%;
+    left: 10%;
+    margin: auto;
+    padding: 75px 0;
+    width: 950px;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
 
+.register-content-title {
+    width: 640px;
+    font-size: 3.125rem;
+    margin: 0 32px;
+    font-weight: 600;
+}
 
+.register-content-infor {
+    width: 640px;
+    font-size: 1.625rem;
+    margin: 16px 32px;
+    font-weight: 52 0;
+}
+
+.register-form {
+    width: 950px;
+    height: 114px;
+    padding: 13.6px 0 0 0;
+}
+
+.register-form .register-form-container {
+    position: relative;
+    right: 12.5%;
+}
+
+.register-form-title {
+    font-size: 1.2rem;
+    width: 620px;
+    padding: 0 40px 20px 40px;
+}
+
+.register-form-input {
+    border: 1px solid #ccc;
+    width: 450px;
+    height: 60px;
+    font-size: 16px;
+    padding: 0 24px;
+    border-radius: 3px;
+}
+
+.register-form-button {
+    right: 4px;
+    top: 3px;
+    border: 1px solid #df0712;
+    background-color: #df0712;
+    border-radius: 1px;
+    position: relative;
+    width: 212px;
+    height: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register-form-button-icon {
+    font-size: 16px;
+}
+
+.register-form-button:hover {
+    background-color: #f40612;
+}
